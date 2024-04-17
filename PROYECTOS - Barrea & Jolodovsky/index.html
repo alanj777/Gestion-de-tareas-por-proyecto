@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>BIGLIST (And Projects, By Alan y Vicente)</h1>
+    <input type="text" id="projectName" placeholder="Nombre del proyecto...">
+    <input type="text" id="projectDescription" placeholder="Descripción del proyecto...">
+    <button onclick="agregarProyecto()">Agregar Proyecto</button>
+    <hr>
+    <input type="text" id="todoInput" placeholder="Ingrese una tarea...">
+    <input type="text" id="todoDescription" placeholder="Descripción de la tarea...">
+    <input type="date" id="dueDate" placeholder="Fecha de vencimiento...">
+    <select id="selectProject">
+      <option value="" selected>Sin Proyecto</option>
+    </select>
+    <button onclick="agregarTarea()">Agregar Tarea</button>
+    <button onclick="mostrarTareas()">Mostrar Tareas</button>
+    <button onclick="mostrarTareaMasRapida()">Tarea más rápida</button>
+    <button onclick="eliminarTodos()">Eliminar Todos</button>
+    <select id="filterProject">
+      <option value="todos" selected>Todos</option>
+    </select>
+    <input type="date" id="dueDateSearch" placeholder="Buscar por fecha de vencimiento...">
+    <button onclick="buscarTareasPorFecha()">Buscar</button>
+    <ul id="todoList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
